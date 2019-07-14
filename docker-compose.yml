@@ -1,0 +1,9 @@
+version: "3.7"
+services: 
+  backend:
+    build:
+      context: movienet-backend/movienet
+      dockerfile: Dockerfile
+    image: olakatosz/movienet-backend
+    ports: 
+      - 1234:8080
