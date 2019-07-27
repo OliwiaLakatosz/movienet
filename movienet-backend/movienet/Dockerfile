@@ -4,7 +4,7 @@ WORKDIR /backend
 
 COPY . /backend
 
-RUN mvn package -q
+RUN mvn clean package -q
 
 CMD [ "java", "-jar", "target/movienet-1.0-SNAPSHOT.jar" ]
 
